@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Traverse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="darkBackgroundColor">#000000</string>
+    <string name="lightBackgroundColor">#2e3942</string>
+
+
+
+</resources>

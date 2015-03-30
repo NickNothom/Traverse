@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="270dp"
+        android:layout_height="180dp"
+        android:id="@+id/pnlGPS"
+        android:background="#ff182831"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS Data"
+            android:id="@+id/lblGPS"
+            android:textColor="#ffbebebe"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:textSize="18dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:id="@+id/grdGPSData"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Heading: 139°"
+                android:id="@+id/lblHeading"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Accuracy: 15m"
+                android:id="@+id/lblAccuracy"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Speed: 35 mph"
+                android:id="@+id/lblSpeed"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Altitude: 2,800 M"
+                android:id="@+id/lblAltitude"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Dist: 35.5 km"
+                android:id="@+id/lblDistance"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Recording: On"
+                android:id="@+id/lblRecording"
+                android:textColor="#ffbebebe"
+                android:padding="2dp" />
+        </GridLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Toggle GPS Recording"
+            android:id="@+id/btnRecord"
+            android:background="#ff203d48"
+            android:layout_margin="15dp"
+            android:textColor="#ffbebebe" />
+
+    </LinearLayout>
+</LinearLayout>

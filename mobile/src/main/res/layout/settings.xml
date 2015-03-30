@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d20c0f16"
+    android:baselineAligned="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff182831"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/btnSettingsBack"
+            android:src="@drawable/ic_action_back"
+            android:background="#ff182831"
+            android:onClick="exitSettings" />
+
+        <TextView
+            android:layout_width="560dp"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/lblSettingsTitle"
+            android:textSize="30sp"
+            android:textColor="#ffbebebe"
+            android:background="#ff182831"
+            android:layout_toEndOf="@+id/btnSettingsBack"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Contrast Mode"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/highContrastSwitch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:checked="false"
+             />
+    </RelativeLayout>
+
+</LinearLayout>
