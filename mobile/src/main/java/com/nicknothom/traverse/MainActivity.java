@@ -206,7 +206,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         @Override
         public void onReceive(Context context, Intent intent) {
             //String temp = intent.getStringExtra("notification_event") + "\n" + txtView.getText();
-            Toast.makeText(getApplicationContext(), intent.getStringExtra("notification_event"), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), intent.getStringExtra("notification_event"), Toast.LENGTH_SHORT).show();
             //txtView.setText(temp);
         }
     }

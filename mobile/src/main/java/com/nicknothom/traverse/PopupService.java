@@ -56,8 +56,6 @@ public class PopupService extends Service {
 
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
-
-
                     //remove button on long press
                     if (System.currentTimeMillis() - touchStartTime > ViewConfiguration.getLongPressTimeout() && initialTouchX == event.getX()) {
                         windowManager.removeView(floatingButton);
